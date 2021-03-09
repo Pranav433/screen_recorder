@@ -1,2 +1,5 @@
 SR_PY39
 __pycache__
+build
+dist
+screen_recorder.egg-info

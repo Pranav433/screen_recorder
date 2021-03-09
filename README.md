@@ -1,11 +1,16 @@
 # screen_recoder
 
-[![PyPI version](https://badge.fury.io/py/screen_recorder)](https://badge.fury.io/py/screen_recorder)
+[![PyPI version](https://badge.fury.io/py/screen_recorder.svg)](https://badge.fury.io/py/screen_recorder)
 
 
-This is a simple python package for recording your screen on WINDOWS only
+This is a simple python package for recording your screen on WINDOWS
 
-``NOTE :- dont install it in other OS``
+``NOTE :- don't install it in other OS``
+
+## Key features
+* simple
+* Fast
+* efficient
 
 ## Installing
 
@@ -38,3 +43,32 @@ pip install .
 * PyTweening==1.0.3
 * sounddevice==0.4.1
 * SoundFile==0.10.3.post1
+
+## Example
+you have to use [threading](https://realpython.com/intro-to-python-threading/) for this module to work
+```python
+from threading import Thread
+from screen_recorder import Recorder
+import time
+rec = Recorder() 
+def record():
+    rec.record_screen()  # This will start the recording
+    print(rec.get_screenshot())
+
+def stop(): # This will stop the recording after 30 seconds considering it takes 0 seconds inside the loop
+    i=0
+    while True:
+        time.sleep(1)
+        if i == 30:
+            rec.stop()
+            rec.save("recording.mp4")
+            break
+        i+=1
+record_thread = Thread(target=record)
+stop_thread = Thread(target=stop)
+record_thread.start()
+stop_thread.start()
+```
+## Links
+* [github](https://github.com/Pranav433/screen_recorder)
+* [package]()
