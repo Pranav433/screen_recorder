@@ -17,4 +17,4 @@ with open("README.md",'r') as f:
     long_description = f.read()
 
 
-setup(name="screen_recorder",version='1.0',description="A simple screen recorder package for python",long_description=long_description,url="https://github.com/Pranav433/screen_recorder",classifiers=classifiers,keywords='screen recorder',packages=find_packages(),install_requires=requirements,author="Pranav Parashar",author_email="krish420360@gmail.com",license='MIT',)
+setup(name="screen_recorder",version='1.0',description="A simple screen recorder package for python",long_description=long_description,url="https://github.com/Pranav433/screen_recorder",classifiers=classifiers,keywords='screen recorder',packages=find_packages(),install_requires=requirements,author="Pranav Parashar",author_email="krish420360@gmail.com",license='MIT',long_description_content_type="text/markdown")
