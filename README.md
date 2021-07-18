@@ -1,6 +1,6 @@
 # screen_recoder
 
-[![PyPI version](https://badge.fury.io/py/screen_recorder.svg)](https://badge.fury.io/py/screen_recorder)
+[![PyPI version](https://badge.fury.io/py/screen-recorder-python.svg)](https://badge.fury.io/py/screen-recorder-python)
 
 
 This is a simple python package for recording your screen on WINDOWS
