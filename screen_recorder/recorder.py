@@ -25,7 +25,7 @@ class Recorder(Video,Audio):
     def _combine_audio_and_video(self,path):
         try:
             video = ffmpeg.input(getcwd() + '/tmp/{}.avi'.format(self.unique_id))
-            audio = ffmpeg.input(getcwd() + '/tmp/{self.unique_id}.wav'.format(self.unique_id))
+            audio = ffmpeg.input(getcwd() + '/tmp/{}.wav'.format(self.unique_id))
             out = ffmpeg.output(video, audio, path, vcodec='copy', acodec='aac', strict='experimental')
             out.run()
         except:
