@@ -21,7 +21,7 @@ pip install screen_recorder
 **OR**
 
 ```
-git clone space
+git clone https://github.com/Pranav433/screen_recorder
 cd screen_recorder
 pip install .
 ```
